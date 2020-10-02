@@ -1,4 +1,4 @@
-#grupo #8 Viper Code
+#grupo 8 Viper Code
 #Axel Soto
 #Cesar Diaz
 #Alejandro Batista
