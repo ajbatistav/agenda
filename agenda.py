@@ -1,3 +1,8 @@
+#grupo #8 Viper Code
+#Axel Soto
+#Cesar Diaz
+#Alejandro Batista
+
 import sqlite3
 import modulo
 con = sqlite3.connect("contactos.db")
