@@ -75,3 +75,29 @@ while select != 6:
 
         modulo.menu()
         select = int(input("> "))        
+
+    if select == 5: #Eliminar contactos
+        print("Tenga en cuenta que se eliminará para siempre.")
+        ("Seguro que desea eliminar algún contacto?")
+        security = str(input("Ingrese (si) por seguridad: "))
+        if security == "si":
+            query2 = """ SELECT * FROM contactos; """
+            cursor.execute(query2)
+            result = cursor.fetchall()
+            print(result)            
+            nb = str(input("Inserte id de el contacto a borrar: "))
+            modulo.borrar_Cont(nb)
+            con.commit()
+            print("Contacto borrado con exito.")
+            input("Pulse para continuar ")
+
+
+            modulo.menu()
+            select = int(input("> "))    
+
+    if select > 6:
+        print("Esta opcion no esta en el menu")
+        modulo.menu()
+        select = int(input("Ingrese una opcion del menu> "))
+  
+exit()

@@ -41,3 +41,9 @@ def menu():
     print("4.Actualizar un contacto.")
     print("5.Eliminar un contacto.")
     print("6.Salir.")
+
+def borrar_Cont(nombrecontacto):
+    query4 ="""DELETE FROM contactos WHERE contactoid = ? ;"""
+    cursor.execute(query4, (contactoid,))
+    con.commit()
+    
